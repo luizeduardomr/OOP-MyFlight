@@ -4,7 +4,8 @@ import java.time.Duration;
 public class Voo
 {
     private LocalDateTime dataHora;
-    private Duration duracao; 
+    private Duration duracao;
+    private Rota rota;
 
     public void setDataHora(LocalDateTime dataHora){
         this.dataHora = dataHora;

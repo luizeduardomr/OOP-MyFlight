@@ -3,23 +3,23 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 public class GerenciadorVoos
 {
-    private ArrayList<Voo> listaVoos;
+    private ArrayList<Voo> voos;
 
     public GerenciadorVoos(){
-        listaVoos = new ArrayList();
+        voos = new ArrayList();
     }
 
     public void adicionar(Voo voo){
-        listaVoos.add(voo);
+        voos.add(voo);
     }
 
     public ArrayList<Voo> listarTodos(){
-        return listaVoos;
+        return voos;
     }
 
     public ArrayList<Voo> buscarData(LocalDateTime data){  //Check if LocalDateTime can be used instead of LocalDate
         ArrayList<Voo> lista = new ArrayList();
-        for (Voo voo : listaVoos) {
+        for (Voo voo : voos) {
             if(voo.getDataHora() == data){
                 lista.add(voo);
             }
