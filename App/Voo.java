@@ -7,6 +7,20 @@ public class Voo
     private Duration duracao;
     private Rota rota;
 
+    public Voo(Rota rota, LocalDateTime dataHora, Duration duracao){
+        this.rota = rota;
+        this.dataHora = dataHora;
+        this.duracao = duracao;
+    }
+
+    public Duration getDuracao() {
+        return duracao;
+    }
+
+    public Rota getRota() {
+        return rota;
+    }
+
     public void setDataHora(LocalDateTime dataHora){
         this.dataHora = dataHora;
     }
