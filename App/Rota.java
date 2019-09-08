@@ -4,6 +4,12 @@ public class Rota {
     private Aeronave aeronave;
     private CiaAerea ciaAerea;
 
+    public void Rota(Aeroporto d, Aeroporto o, Aeronave a, CiaAerea c){
+        this.destino = d;
+        this.origem = o;
+        this.aeronave = a;
+        this.ciaAerea = c;
+    }
     public Aeroporto getOrigem(){return origem;}
     public Aeroporto getDestino(){return destino;}
     public void setOrigem(Aeroporto origem){this.origem = origem;}
