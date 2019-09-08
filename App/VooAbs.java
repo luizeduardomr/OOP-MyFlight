@@ -6,8 +6,10 @@ public abstract class VooAbs
     private Duration duracao;
     private Rota rota;
 
-    public VooAbs(LocalDateTime dataHora){
+    public VooAbs(Rota rota, LocalDateTime dataHora, Duration duracao){
+        this.rota = rota;
         this.dataHora = dataHora;
+        this.duracao = duracao;
     }
 
     public Duration getDuracao() {
@@ -20,5 +22,9 @@ public abstract class VooAbs
 
     public LocalDateTime getDataHora(){
         return this.dataHora;
+    }
+
+    public String toString(){
+        return "Voo: " + this.dataHora + ", " + this.duracao + ", " + this.rota;
     }
 }

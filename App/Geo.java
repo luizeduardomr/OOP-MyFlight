@@ -8,4 +8,8 @@ public class Geo {
         this.latitude = latitude;
     }
 
+    public String toString(){
+        return "longitude: " + this.longitude + ", latitude: " + this.latitude;
+    }
+
 }

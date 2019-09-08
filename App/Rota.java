@@ -18,4 +18,8 @@ public class Rota {
     public Aeronave getAeronave(){return aeronave;}
     public void setAeronave(Aeronave aeronave){this.aeronave = aeronave;}
 
+    public String toString(){
+        return "Rota: origem: " + this.origem + ", destino: " + this.destino;
+    }
+
 }

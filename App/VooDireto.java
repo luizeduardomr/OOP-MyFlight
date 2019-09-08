@@ -6,11 +6,8 @@ import java.util.ArrayList;
 
 public class VooDireto extends VooAbs{
 
-        private Rota rota;
-
-    public VooDireto(LocalDateTime local, Rota rota){
-        super(local);
-        this.rota = rota;
+    public VooDireto(LocalDateTime local, Rota rota, Duration d){
+        super(rota, local, d);
     }
     
     public Rota getRota(){

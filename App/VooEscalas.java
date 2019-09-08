@@ -8,8 +8,8 @@ public class VooEscalas extends VooAbs{
 
         private ArrayList<Rota> rotas;
 
-    public VooEscalas(LocalDateTime local){
-        super(local);
+    public VooEscalas(Rota rota, LocalDateTime dataHora, Duration duracao){
+        super(rota, dataHora, local);
     }
 
     public ArrayList<Rota> getRotas() {

@@ -20,4 +20,8 @@ public class Aeroporto
     public String getCodigo(){
         return this.codigo;
     }
+
+    public String toString(){
+        return "Aeroporto de " + this.nome + " (" + this.codigo + "), Geo Localização: " + this.local;
+    }
 }
