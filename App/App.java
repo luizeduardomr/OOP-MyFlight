@@ -9,15 +9,16 @@ public class App {
 		System.out.println("MyFlight project...");
 
         GerenciadorCias cias = new GerenciadorCias();
-		CiaAerea c1  = new CiaAerea ("G3", "Gol");
-        CiaAerea c2  = new CiaAerea ("JJ", "LATAM");
-        CiaAerea c3  = new CiaAerea ("AZ", "Azul");
 
-        cias.inserir(c1);
-        cias.inserir(c2);
-        cias.inserir(c3);
+		CiaAerea c1  = new CiaAerea("G3", "Gol");
+        CiaAerea c2  = new CiaAerea("JJ", "LATAM");
+        CiaAerea c3  = new CiaAerea("AZ", "Azul");
 
-        for (CiaAerea c: cias.getCias()){
+        GerenciadorCias.adicionar(c1);
+        GerenciadorCias.adicionar(c2);
+        GerenciadorCias.adicionar(c3);
+
+        for (CiaAerea c: GerenciadorCias.listarTodas()){
             System.out.println(c + "\n");
         }
 

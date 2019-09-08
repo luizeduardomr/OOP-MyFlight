@@ -1,5 +1,7 @@
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.Duration;
+
 public abstract class VooAbs
 {
     private LocalDateTime dataHora;

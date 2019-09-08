@@ -2,7 +2,7 @@ public class CiaAerea {
     private String codigo;
     private String nome;
 
-    public void CiaAerea(String codigo, String nome){
+    public  CiaAerea(String codigo, String nome){
         this.codigo = codigo;
         this.nome = nome;
     }

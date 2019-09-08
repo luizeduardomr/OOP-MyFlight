@@ -4,7 +4,9 @@ public class Rota {
     private Aeronave aeronave;
     private CiaAerea ciaAerea;
 
-    public void Rota(Aeroporto d, Aeroporto o, Aeronave a, CiaAerea c){
+
+
+    public  Rota(Aeroporto d, Aeroporto o, Aeronave a, CiaAerea c){
         this.destino = d;
         this.origem = o;
         this.aeronave = a;

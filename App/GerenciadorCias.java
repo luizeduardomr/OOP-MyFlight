@@ -9,11 +9,11 @@ public class GerenciadorCias {
         empresas = new ArrayList();
     }
 
-    public void adicionar(CiaAerea cia){
+    public static void adicionar(CiaAerea cia){
         empresas.add(cia);
     }
 
-    public ArrayList<CiaAerea> listarTodas(){
+    public static ArrayList<CiaAerea> listarTodas(){
         return empresas;
     }
 
