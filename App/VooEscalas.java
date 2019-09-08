@@ -9,7 +9,7 @@ public class VooEscalas extends VooAbs{
         private ArrayList<Rota> rotas;
 
     public VooEscalas(Rota rota, LocalDateTime dataHora, Duration duracao){
-        super(rota, dataHora, local);
+        super(rota, dataHora, duracao);
     }
 
     public ArrayList<Rota> getRotas() {
@@ -25,7 +25,7 @@ public class VooEscalas extends VooAbs{
     }
 
     public Duration getDuration(){
-        return super.getDuration();
+        return super.getDuracao();
     }
 
     @Override

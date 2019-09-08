@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c77eb1d-931e-4fc5-bef8-02a523a5ad8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Aeroporto (1).java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/GerenciadorAeroportos (1).java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/GerenciadorVoos (1).java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Heranca/Aeronave.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Heranca/Aeroporto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Heranca/App.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Heranca/CiaAerea.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Heranca/Geo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Heranca/GerenciadorAeronaves.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Heranca/GerenciadorAeroportos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Heranca/GerenciadorCias.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Heranca/GerenciadorRotas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Heranca/GerenciadorVoos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Heranca/Rota.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Heranca/Voo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Polimorfismo/Aeronave.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Polimorfismo/Aeroporto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Polimorfismo/App.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Polimorfismo/CiaAerea.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Polimorfismo/Geo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Polimorfismo/GerenciadorAeronaves.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Polimorfismo/GerenciadorAeroportos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Polimorfismo/GerenciadorCias.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Polimorfismo/GerenciadorRotas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Polimorfismo/GerenciadorVoos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Polimorfismo/Rota.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Polimorfismo/Voo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Voo (1).java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Voo.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/Voo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/VooDireto.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/VooDireto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/VooEscalas.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/VooEscalas.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +38,20 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="MyFlight" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -88,7 +70,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

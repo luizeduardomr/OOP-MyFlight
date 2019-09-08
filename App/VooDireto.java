@@ -8,19 +8,19 @@ public class VooDireto extends VooAbs{
 
 
     public VooDireto(Rota origem, LocalDateTime datahora, Duration duracao) {
-        super();
+        super(origem, datahora, duracao);
     }
 
     public Rota getRota(){
-        return this.rota;
+        return super.getRota();
     }
 
     public Duration getDuration(){
-        return super.getDuration();
+        return super.getDuracao();
     }
 
     @Override
     public String toString(){
-            return super.toString() + "Rotas: " + rotas;
+            return super.toString() + "Rotas: " + getRota();
     }
     }
