@@ -22,4 +22,10 @@ public class CiaAerea {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    @Override
+    public String toString(){
+        return "Cia Aerea: nome: " + nome + ", código: " + codigo;
+    }
+
 }

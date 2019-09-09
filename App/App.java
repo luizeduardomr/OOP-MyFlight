@@ -14,11 +14,11 @@ public class App {
         CiaAerea c2  = new CiaAerea("JJ", "LATAM");
         CiaAerea c3  = new CiaAerea("AZ", "Azul");
 
-        GerenciadorCias.adicionar(c1);
-        GerenciadorCias.adicionar(c2);
-        GerenciadorCias.adicionar(c3);
+        cias.adicionar(c1);
+        cias.adicionar(c2);
+        cias.adicionar(c3);
 
-        for (CiaAerea c: GerenciadorCias.listarTodas()){
+        for (CiaAerea c: cias.listarTodas()){
             System.out.println(c + "\n");
         }
 

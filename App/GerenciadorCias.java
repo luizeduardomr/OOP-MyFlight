@@ -6,15 +6,16 @@ public class GerenciadorCias {
     private ArrayList<CiaAerea> empresas;
 
     public GerenciadorCias(){
+
         empresas = new ArrayList();
     }
 
-    public static void adicionar(CiaAerea cia){
+    public void adicionar(CiaAerea cia){
         empresas.add(cia);
     }
 
-    public static ArrayList<CiaAerea> listarTodas(){
-        return empresas;
+    public ArrayList<CiaAerea> listarTodas(){
+        return empresas ;
     }
 
     public ArrayList<CiaAerea> buscarPorCodigo(String cod){
