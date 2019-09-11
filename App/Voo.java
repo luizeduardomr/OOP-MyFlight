@@ -13,6 +13,12 @@ public class Voo
         this.duracao = duracao;
     }
 
+    public Voo(Rota rota, Duration duracao){
+        this.rota = rota;
+        this.dataHora = LocalDateTime.of(2016,8, 12, 12, 00);
+        this.duracao = duracao;
+    }
+
     public Duration getDuracao() {
         return duracao;
     }
