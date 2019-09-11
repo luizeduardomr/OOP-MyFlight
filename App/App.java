@@ -37,9 +37,19 @@ public class App {
         Rota r3 = new Rota(londonAero, saoPauloAero, aviao1, c1);
         Rota r4 = new Rota (saoPauloAero, portoAlegreAero, aviao1, c1);
 
+        long distanciaR1 = (long)r1.calculaDistancia();
+        long distanciaR2 = (long)r2.calculaDistancia();
+        long distanciaR3 = (long)r3.calculaDistancia();
+        long distanciaR4 = (long)r4.calculaDistancia();
+
+        long tempoHR1 = distanciaR1 / 805;
+        long tempoHR2 = distanciaR2 / 805;
+        long tempoHR3 = distanciaR3 / 805;
+        long tempoHR4 = distanciaR4 / 805;
 
         LocalDateTime datahora = LocalDateTime.of(2019, 6, 30, 12, 00);
-        Duration duracao = Duration.ofMinutes(120); // 2 horas
+        Duration duracao = Duration.ofHours(tempoHR1 + tempoHR2 + tempoHR3 + tempoHR4);
+        Duration duracaoV2 = Duration.ofHours(tempoHR1);
 
 
 /*--------------------------------------------------------------------------*/
@@ -49,7 +59,7 @@ public class App {
         vooTeste.adicionarRota(r4);
         System.out.print (vooTeste + "\n\n");
 
-		VooDireto vooTeste2 = new VooDireto(r1, datahora, duracao);
+		VooDireto vooTeste2 = new VooDireto(r1, datahora, duracaoV2);
 		System.out.print (vooTeste2);
 
 		 
