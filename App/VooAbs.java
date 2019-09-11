@@ -14,6 +14,11 @@ public abstract class VooAbs
         this.duracao = duracao;
     }
 
+    public VooAbs(LocalDateTime dataHora, Duration duracao){
+        this.dataHora = dataHora;
+        this.duracao = duracao;
+    }
+
     public Duration getDuracao() {
         return duracao;
     }
@@ -27,6 +32,10 @@ public abstract class VooAbs
     }
 
     public String toString(){
-        return "Voo: " + this.dataHora + ", " + this.duracao + ", " + this.rota;
+        String retorno = "Voo: Data e Hora: " + this.dataHora + ", Duração: " + this.duracao;
+        if(this.rota != null){
+            retorno = retorno + ", " + this.rota;
+        }
+        return retorno;
     }
 }

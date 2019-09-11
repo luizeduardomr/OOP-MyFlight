@@ -32,8 +32,10 @@ public class App {
 
         Aeronave aviao1 = new Aeronave ("B747", "Boing 747", 200);
 
-        Rota origem = new Rota (portoAlegreAero, saoPauloAero, aviao1, c1);
-        Rota destino = new Rota (saoPauloAero, londonAero, aviao1, c1);
+        Rota r1 = new Rota (portoAlegreAero, saoPauloAero, aviao1, c1);
+        Rota r2 = new Rota (saoPauloAero, londonAero, aviao1, c1);
+        Rota r3 = new Rota(londonAero, saoPauloAero, aviao1, c1);
+        Rota r4 = new Rota (saoPauloAero, portoAlegreAero, aviao1, c1);
 
 
         LocalDateTime datahora = LocalDateTime.of(2019, 6, 30, 12, 00);
@@ -41,11 +43,13 @@ public class App {
 
 
 /*--------------------------------------------------------------------------*/
-        VooEscalas vooTeste = new VooEscalas(origem, datahora, duracao);
-        vooTeste.adicionarRota(destino);
-        System.out.print (vooTeste);
+        VooEscalas vooTeste = new VooEscalas(datahora, duracao);
+        vooTeste.adicionarRota(r2);
+        vooTeste.adicionarRota(r3);
+        vooTeste.adicionarRota(r4);
+        System.out.print (vooTeste + "\n\n");
 
-		VooDireto vooTeste2 = new VooDireto(origem, datahora, duracao);
+		VooDireto vooTeste2 = new VooDireto(r1, datahora, duracao);
 		System.out.print (vooTeste2);
 
 		 
