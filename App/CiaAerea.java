@@ -1,12 +1,12 @@
-public class CiaAerea {
-    private static int qtdCias = 0;
+public class CiaAerea implements Contavel {
+    private static int qtd = 0;
     private String codigo;
     private String nome;
 
     public  CiaAerea(String codigo, String nome){
         this.codigo = codigo;
         this.nome = nome;
-        qtdCias++;
+        qtd++;
     }
 
     public String getCodigo() {
@@ -30,8 +30,8 @@ public class CiaAerea {
         return "Cia Aerea: nome: " + nome + ", código: " + codigo;
     }
 
-    public static int getTotalCias() {
-        return qtdCias;
+    public static int getQtd() {
+        return qtd;
     }
 
 }

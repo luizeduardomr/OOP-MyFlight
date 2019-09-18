@@ -1,14 +1,18 @@
-public class Aeronave {
+public class Aeronave implements Imprimivel, Contavel {
     private String codigo;
     private String descricao;
     private int capacidade;
+    private static int qtd = 0;
 
+    public void imprimir(){
 
+    }
 
     public Aeronave(String codigo, String descricao, int capacidade){
         this.capacidade = capacidade;
         this.codigo = codigo;
         this.descricao = descricao;
+        qtd++;
     }
 
     public String getCodigo() {
@@ -33,5 +37,9 @@ public class Aeronave {
 
     public void setCapacidade(int capacidade) {
         this.capacidade = capacidade;
+    }
+
+    public static int getQtd() {
+        return qtd;
     }
 }
