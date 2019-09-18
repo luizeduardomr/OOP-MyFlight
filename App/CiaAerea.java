@@ -1,10 +1,12 @@
 public class CiaAerea {
+    private static int qtdCias = 0;
     private String codigo;
     private String nome;
 
     public  CiaAerea(String codigo, String nome){
         this.codigo = codigo;
         this.nome = nome;
+        qtdCias++;
     }
 
     public String getCodigo() {
@@ -26,6 +28,10 @@ public class CiaAerea {
     @Override
     public String toString(){
         return "Cia Aerea: nome: " + nome + ", código: " + codigo;
+    }
+
+    public static int getTotalCias() {
+        return qtdCias;
     }
 
 }
