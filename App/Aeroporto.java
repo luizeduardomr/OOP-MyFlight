@@ -1,7 +1,9 @@
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Duration;
-public class Aeroporto
+import java.util.ArrayList;
+
+public class Aeroporto implements Comparable<Aeroporto>
 {
     private String codigo;
     private String nome;
@@ -25,5 +27,9 @@ public class Aeroporto
 
     public String toString(){
         return "Aeroporto de " + this.nome + " (" + this.codigo + "), Geo Localização: " + this.local;
+    }
+
+    public int compareTo(Aeroporto outroAero){
+        return this.nome.compareTo(outroAero.nome);
     }
 }

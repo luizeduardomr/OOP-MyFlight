@@ -1,4 +1,6 @@
-public class Rota {
+import java.util.ArrayList;
+
+public class Rota implements Comparable<Rota>{
     private Aeroporto destino;
     private Aeroporto origem;
     private Aeronave aeronave;
@@ -25,4 +27,7 @@ public class Rota {
         return "Rota: origem: " + this.origem + ", destino: " + this.destino;
     }
 
+    public int compareTo(Rota outraRota){
+        return this.ciaAerea.getNome().compareTo(outraRota.ciaAerea.getNome());
+    }
 }

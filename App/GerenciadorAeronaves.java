@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Collections;
 
 public class GerenciadorAeronaves {
     private ArrayList<Aeronave> aeronaves;
@@ -25,5 +26,9 @@ public class GerenciadorAeronaves {
             }
         }
         return lista;
+    }
+
+    public void ordenaDescricao() {
+        Collections.sort(aeronaves);
     }
 }

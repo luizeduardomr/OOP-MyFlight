@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Collections;
+
 public class GerenciadorRotas {
     private ArrayList<Rota> rotas;
 
@@ -24,5 +26,8 @@ public class GerenciadorRotas {
             }
         }
         return lista;
+    }
+    public void ordenaCiaAerea() {
+        Collections.sort(rotas);
     }
 }

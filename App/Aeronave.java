@@ -1,4 +1,6 @@
-public class Aeronave implements Imprimivel, Contavel {
+import java.util.ArrayList;
+
+public class Aeronave implements Imprimivel, Contavel, Comparable<Aeronave> {
     private String codigo;
     private String descricao;
     private int capacidade;
@@ -41,5 +43,9 @@ public class Aeronave implements Imprimivel, Contavel {
 
     public static int getQtd() {
         return qtd;
+    }
+
+    public int compareTo(Aeronave outraAeronave){
+        return this.descricao.compareTo(outraAeronave.descricao);
     }
 }
