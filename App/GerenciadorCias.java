@@ -1,6 +1,10 @@
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.util.Scanner;
 
 public class GerenciadorCias {
     private ArrayList<CiaAerea> empresas;
@@ -36,5 +40,22 @@ public class GerenciadorCias {
             }
         }
         return lista;
+    }
+
+    public void carregaDados() throws IOException {
+        Path path2 = Paths.get("airlines.dat");
+        try (Scanner sc = new Scanner(Files.newBufferedReader(path2, Charset.forName("utf8")))) {
+            sc.useDelimiter("[;\n]"); // separadores: ; e nova linha
+            String header = sc.nextLine(); // pula cabeçalho
+            String airline_id, airline_name;
+            while (sc.hasNext()) {
+                airline_id = sc.next();
+                airline_name = sc.next();
+                System.out.format("%s - %s", airline_id, airline_name);
+            }
+        }
+        catch (IOException x) {
+            System.err.format("Erro de E/S: %s%n", x);
+        }
     }
 }
